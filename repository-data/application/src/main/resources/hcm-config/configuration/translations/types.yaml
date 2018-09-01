@@ -1,0 +1,108 @@
+definitions:
+  config:
+    /hippo:configuration/hippo:translations/hippo:types/hippodockerexample:bannerdocument:
+      jcr:primaryType: hipposys:resourcebundles
+      /en:
+        jcr:primaryType: hipposys:resourcebundle
+        hippodockerexample:content: Content
+        hippodockerexample:image: Image
+        hippodockerexample:link: Link
+        hippodockerexample:title: Title
+        jcr:name: Banner
+      /nl:
+        jcr:primaryType: hipposys:resourcebundle
+        hippodockerexample:content: Inhoud
+        hippodockerexample:image: Afbeelding
+        hippodockerexample:link: Link
+        hippodockerexample:title: Titel
+        jcr:name: Banner
+      /fr:
+        jcr:primaryType: hipposys:resourcebundle
+        hippodockerexample:content: Contenu
+        hippodockerexample:image: Image
+        hippodockerexample:link: Lien
+        hippodockerexample:title: Titre
+        jcr:name: Bannière
+      /de:
+        jcr:primaryType: hipposys:resourcebundle
+        hippodockerexample:content: Inhalt
+        hippodockerexample:image: Abbildung
+        hippodockerexample:link: Link
+        hippodockerexample:title: Titel
+        jcr:name: Banner
+    /hippo:configuration/hippo:translations/hippo:types/hippodockerexample:contentdocument:
+      jcr:primaryType: hipposys:resourcebundles
+      /en:
+        jcr:primaryType: hipposys:resourcebundle
+        hippodockerexample:content: Content
+        hippodockerexample:introduction: Introduction
+        hippodockerexample:publicationdate: Publication date
+        hippodockerexample:title: Title
+        jcr:name: Simple Document
+      /nl:
+        jcr:primaryType: hipposys:resourcebundle
+        hippodockerexample:content: Inhoud
+        hippodockerexample:introduction: Introductie
+        hippodockerexample:publicationdate: Publicatiedatum
+        hippodockerexample:title: Titel
+        jcr:name: Eenvoudig Document
+      /fr:
+        jcr:primaryType: hipposys:resourcebundle
+        hippodockerexample:content: Contenu
+        hippodockerexample:introduction: Introduction
+        hippodockerexample:publicationdate: Date de publication
+        hippodockerexample:title: Titre
+        jcr:name: Document simple
+      /de:
+        jcr:primaryType: hipposys:resourcebundle
+        hippodockerexample:content: Inhalt
+        hippodockerexample:introduction: Einführung
+        hippodockerexample:publicationdate: Publikationsdatum
+        hippodockerexample:title: Titel
+        jcr:name: Einfaches Dokument
+    /hippo:configuration/hippo:translations/hippo:types/hippodockerexample:newsdocument:
+      jcr:primaryType: hipposys:resourcebundles
+      /en:
+        jcr:primaryType: hipposys:resourcebundle
+        hippodockerexample:author: Author
+        hippodockerexample:content: Content
+        hippodockerexample:date: Date
+        hippodockerexample:image: Image
+        hippodockerexample:introduction: Introduction
+        hippodockerexample:location: Location
+        hippodockerexample:source: Source
+        hippodockerexample:title: Title
+        jcr:name: News Item
+      /nl:
+        jcr:primaryType: hipposys:resourcebundle
+        hippodockerexample:author: Auteur
+        hippodockerexample:content: Inhoud
+        hippodockerexample:date: Datum
+        hippodockerexample:image: Afbeelding
+        hippodockerexample:introduction: Introductie
+        hippodockerexample:location: Locatie
+        hippodockerexample:source: Bron
+        hippodockerexample:title: Titel
+        jcr:name: Nieuwsbericht
+      /de:
+        jcr:primaryType: hipposys:resourcebundle
+        hippodockerexample:author: Verfasser
+        hippodockerexample:content: Inhalt
+        hippodockerexample:date: Datum
+        hippodockerexample:image: Abbildung
+        hippodockerexample:introduction: Einführung
+        hippodockerexample:location: Standort
+        hippodockerexample:source: Quelle
+        hippodockerexample:title: Titel
+        jcr:name: News
+      /fr:
+        jcr:primaryType: hipposys:resourcebundle
+        hippodockerexample:author: Auteur
+        hippodockerexample:content: Contenu
+        hippodockerexample:date: Date
+        hippodockerexample:image: Image
+        hippodockerexample:introduction: Introduction
+        hippodockerexample:location: Lieu
+        hippodockerexample:source: Source
+        hippodockerexample:title: Titre
+        jcr:name: Message d'info
