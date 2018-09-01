@@ -1,6 +1,8 @@
 /content/documents/hippodockerexample:
+  .meta:order-before: administration
   jcr:primaryType: hippostd:folder
   jcr:mixinTypes: ['hippo:named', 'hippotranslation:translated', 'mix:referenceable']
+  jcr:uuid: 6700cb4c-1a34-4108-bc9a-d2d1977a6e38
   hippo:name: Hippo Docker Example
   hippostd:foldertype: [new-translated-folder, new-document]
   hippotranslation:id: 996bcac5-86cf-49b5-a7a3-16a74863e814

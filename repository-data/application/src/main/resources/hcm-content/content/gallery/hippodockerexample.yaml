@@ -1,7 +1,7 @@
 /content/gallery/hippodockerexample:
   jcr:primaryType: hippogallery:stdImageGallery
   jcr:mixinTypes: ['hippo:named', 'mix:referenceable']
+  jcr:uuid: c9aaa8cf-0a8e-4c9e-815a-5aabdc798017
   hippo:name: Hippo Docker Example
   hippostd:foldertype: [new-image-folder]
   hippostd:gallerytype: ['hippogallery:imageset']
-
