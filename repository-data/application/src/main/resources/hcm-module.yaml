@@ -1,0 +1,6 @@
+group: 
+  name: hippodockerexample
+  after: hippo-cms
+project: hippodockerexample
+module:
+  name: hippodockerexample-repository-data-application

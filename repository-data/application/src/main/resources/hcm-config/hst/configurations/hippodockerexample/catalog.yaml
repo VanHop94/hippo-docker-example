@@ -1,0 +1,6 @@
+definitions:
+  config:
+    /hst:hst/hst:configurations/hippodockerexample/hst:catalog:
+      jcr:primaryType: hst:catalog
+      /hippodockerexample-catalog:
+        jcr:primaryType: hst:containeritempackage

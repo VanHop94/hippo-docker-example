@@ -1,0 +1,5 @@
+group: 
+  name: hippodockerexample
+  after: hippo-cms
+project: hippodockerexample
+module: hippodockerexample-repository-data-webfiles
