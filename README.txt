@@ -21,6 +21,24 @@ Access the Hippo Essentials at <http://localhost:8080/essentials>.
 After your project is set up, access the CMS at <http://localhost:8080/cms> and the site at <http://localhost:8080/site>.
 Logs are located in target/tomcat8x/logs
 
+Running as Docker container
+===========================
+
+To run with h2db and default repository configuration:
+    docker run -d -p 8080:8080 hippo/hippodockerexample
+
+To run with mysql database:
+    run mysql container:
+    docker run --name hippo-db  -e MYSQL_ROOT_PASSWORD=hippo -e MYSQL_DATABASE=hippo -e MYSQL_USER=hippo -e MYSQL_PASSWORD=hippo -e ON_CREATE_DB=hippo -d mysql:5.6.36
+
+    run Hippo CMS container with link to database:
+    docker run -d -p 8080:8080 --name hippo --link hippo-db:hippo-mysql-database hippo/hippodockerexample
+
+
+
+
+
+
 Building distributions
 ======================
 
