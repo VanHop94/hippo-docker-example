@@ -514,7 +514,9 @@
                                 rm apache-tomcat-${TOMCAT_VERSION}.tar.gz && \
                                 rm -rf /usr/local/tomcat/webapps/examples && \
                                 rm -rf /usr/local/tomcat/webapps/docs && \
-                                rm -rf /usr/local/tomcat/webapps/ROOT
+                                rm -rf /usr/local/tomcat/webapps/ROOT && \
+                                chgrp -R 0 /usr/local/tomcat/ && \
+                                chmod -R g=u /usr/local/tomcat/
 
                                 ENV CATALINA_HOME /usr/local/tomcat
                                 ENV PATH $PATH:$CATALINA_HOME/bin
@@ -655,7 +657,9 @@
                                 rm apache-tomcat-${TOMCAT_VERSION}.tar.gz && \
                                 rm -rf /usr/local/tomcat/webapps/examples && \
                                 rm -rf /usr/local/tomcat/webapps/docs && \
-                                rm -rf /usr/local/tomcat/webapps/ROOT
+                                rm -rf /usr/local/tomcat/webapps/ROOT && \
+                                chgrp -R 0 /usr/local/tomcat/ && \
+                                chmod -R g=u /usr/local/tomcat/
 
                                 ENV CATALINA_HOME /usr/local/tomcat
                                 ENV PATH $PATH:$CATALINA_HOME/bin
