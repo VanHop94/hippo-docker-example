@@ -23,10 +23,16 @@ Logs are located in target/tomcat8x/logs
 
 Building Docker Images
 ======================
-Build docker image with h2d as reprository storage
+Build docker image with h2db as reprository storage
 ```
 mvn clean verify
 mvn -P docker.image
+```
+
+Build docker image with MySQL as repository storage
+```
+mvn clean verify
+mvn -P docker.image.mysql
 ```
 
 Running as Docker container
