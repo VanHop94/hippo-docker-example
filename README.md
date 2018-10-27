@@ -66,7 +66,13 @@ To run with h2db and default repository configuration:
 To run with mysql database:
 run mysql container:
  ```
-    docker run --name hippo-db  -e MYSQL_ROOT_PASSWORD=hippo -e MYSQL_DATABASE=hippo -e MYSQL_USER=hippo -e MYSQL_PASSWORD=hippo -e ON_CREATE_DB=hippo -d mysql:5.6.36
+    docker run --name hippo-db  \
+    -e MYSQL_ROOT_PASSWORD=hippo \
+    -e MYSQL_DATABASE=hippo \
+    -e MYSQL_USER=hippo \
+    -e MYSQL_PASSWORD=hippo \
+    -e ON_CREATE_DB=hippo \
+    -d mysql:5.6.36
 ```
 run Hippo CMS container with link to database:
 
