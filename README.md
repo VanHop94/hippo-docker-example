@@ -25,29 +25,32 @@ Building Docker Images
 ======================
 Build docker image with h2db as reprository storage
 ```
-mvn clean verify
-mvn -P docker.image
+    mvn clean verify
+    mvn -P docker.image
 ```
 
 Build docker image with MySQL as repository storage
 ```
-mvn clean verify
-mvn -P docker.image.mysql
+    mvn clean verify
+    mvn -P docker.image.mysql
 ```
 
 Running as Docker container
 ===========================
 
 To run with h2db and default repository configuration:
+```
     docker run -d -p 8080:8080 hippo/hippodockerexample
-
+````
 To run with mysql database:
     run mysql container:
+ ```
     docker run --name hippo-db  -e MYSQL_ROOT_PASSWORD=hippo -e MYSQL_DATABASE=hippo -e MYSQL_USER=hippo -e MYSQL_PASSWORD=hippo -e ON_CREATE_DB=hippo -d mysql:5.6.36
-
+```
     run Hippo CMS container with link to database:
+```    
     docker run -d -p 8080:8080 --name hippo --link hippo-db:hippo-mysql-database hippo/hippodockerexample
-
+```
 
 
 
