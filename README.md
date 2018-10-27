@@ -21,6 +21,27 @@ Access the Hippo Essentials at <http://localhost:8080/essentials>.
 After your project is set up, access the CMS at <http://localhost:8080/cms> and the site at <http://localhost:8080/site>.
 Logs are located in target/tomcat8x/logs
 
+Building distributions
+======================
+
+To build Tomcat distribution tarballs:
+
+    mvn clean verify
+    mvn -P dist
+      or
+    mvn -P dist-with-development-data
+
+The `dist` profile will produce in the /target directory a distribution tarball, containing the main deployable wars and
+shared libraries.
+
+The `dist-with-development-data` profile will produce a distribution-with-development-data tarball, also containing the
+repository-data-development jar in the shared/lib directory. This kind of distribution is meant to be used for
+deployments to development environments, for instance local deployments or deployments to a continuous integration (CI)
+system. (Initially, this module contains only "author" and "editor" example users for use in testing. Other data must be
+placed in this module explicitly by developers, for demo or testing purposes, etc.)
+
+See also src/main/assembly/*.xml if you need to customize the distributions.
+
 Building Docker Images
 ======================
 Build docker image with h2db as reprository storage
@@ -43,39 +64,16 @@ To run with h2db and default repository configuration:
     docker run -d -p 8080:8080 hippo/hippodockerexample
 ````
 To run with mysql database:
-    run mysql container:
+run mysql container:
  ```
     docker run --name hippo-db  -e MYSQL_ROOT_PASSWORD=hippo -e MYSQL_DATABASE=hippo -e MYSQL_USER=hippo -e MYSQL_PASSWORD=hippo -e ON_CREATE_DB=hippo -d mysql:5.6.36
 ```
-    run Hippo CMS container with link to database:
+run Hippo CMS container with link to database:
+
 ```    
     docker run -d -p 8080:8080 --name hippo --link hippo-db:hippo-mysql-database hippo/hippodockerexample
 ```
 
-
-
-
-
-Building distributions
-======================
-
-To build Tomcat distribution tarballs:
-
-    mvn clean verify
-    mvn -P dist
-      or
-    mvn -P dist-with-development-data
-
-The `dist` profile will produce in the /target directory a distribution tarball, containing the main deployable wars and
-shared libraries.
-
-The `dist-with-development-data` profile will produce a distribution-with-development-data tarball, also containing the
-repository-data-development jar in the shared/lib directory. This kind of distribution is meant to be used for
-deployments to development environments, for instance local deployments or deployments to a continuous integration (CI)
-system. (Initially, this module contains only "author" and "editor" example users for use in testing. Other data must be
-placed in this module explicitly by developers, for demo or testing purposes, etc.)
-
-See also src/main/assembly/*.xml if you need to customize the distributions.
 
 Using JRebel
 ============
