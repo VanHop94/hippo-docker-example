@@ -80,6 +80,9 @@ run Hippo CMS container with link to database:
     docker run -d -p 8080:8080 --name hippo --link hippo-db:hippo-mysql-database hippo/hippodockerexample
 ```
 
+Blog Article
+============
+https://medium.com/@maheshacharya_44641/hippo-cms-docker-containerization-703e2e4e496c
 
 Using JRebel
 ============
